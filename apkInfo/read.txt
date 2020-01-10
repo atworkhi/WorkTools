@@ -1,0 +1,2 @@
+windos 平台安装Grep工具
+http://gnuwin32.sourceforge.net/packages/grep.htm

@@ -9,7 +9,7 @@ path = os.path.join(input("请输入需要爬取的路径："))
 # 获取列表
 filenames = os.listdir(path)
 # 写入
-writeFile = open("F:\\WorkTools\\result\\"+date+"-result.txt", 'w', encoding='utf8')
+writeFile = open(date+"-result.txt", 'w', encoding='utf8')
 
 for filename in filenames:
     print(filename+" 写入中....")

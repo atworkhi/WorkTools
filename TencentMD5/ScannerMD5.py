@@ -42,8 +42,10 @@ def scan_resp(data):
         return result
     except urllib.error.URLError as ue:
         print(ue)
+        pass
     except urllib.error.HTTPError as he:
         print(he)
+        pass
 
 
 # 访问请求 保持会话
@@ -60,13 +62,16 @@ def scan_req(data):
             check = scan_resp(data=data)
             print(check)
             txt.write(check.encode('utf8'))
+            txt.flush
         else:
             print('no result')
 
     except urllib.error.URLError as ue:
         print(ue)
+        pass
     except urllib.error.HTTPError as he:
         print(he)
+        pass
 
 
 # 获取文件md5

@@ -9,7 +9,7 @@ import os
 
 
 def renanme():
-    path = os.path.join(input("请输入文件目录："))
+    path = os.path.join(input("input you file dir:"))
     # 获取列表
     filenames = os.listdir(path)
 
